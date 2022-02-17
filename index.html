@@ -27,20 +27,20 @@
                     <h4 class="text-center mt-5">Income</h4>
                     <div class="input-group mb-3 mt-3">
                         <span class="input-group-text" id="inputGroup-sizing-default">Income: </span>
-                        <input id="income-input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input id="income-input" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                       </div>
                       <h4 class="mt-4 text-center">Expenses</h4>
                       <div class="input-group mb-3 mt-3">
                         <span class="input-group-text" id="inputGroup-sizing-default">Food: </span>
-                        <input id="food-input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input id="food-input" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                       </div>
                       <div class="input-group mb-3 mt-2">
                         <span class="input-group-text" id="inputGroup-sizing-default">Rent: </span>
-                        <input id="rent-input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input id="rent-input" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                       </div>
                       <div class="input-group mb-3 mt-2">
                         <span class="input-group-text" id="inputGroup-sizing-default">Clothes: </span>
-                        <input id="clothes-input" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        <input id="clothes-input" type="number" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                       </div>
                       <!-- calculate button part -->
                       <div class="text-center">
@@ -56,14 +56,14 @@
                       <form class="mt-4" action="/action_page.php">
                         <label for="fname">Save :</label>
                         <input id="input-save"
-                         type="text" id="fname" name="fname">     % <button id="second-calculate-button" type="button" class="btn btn-primary">Calculate</button>
+                         type="number" id="fname" name="fname">     % <button id="second-calculate-button" type="button" class="btn btn-primary">Calculate</button>
                     </div>
 
                     <!-- saving and remaining balance part -->
                     <div class="text-center">
                         <h4 class="mt-4">Saving Amount : <span id="total-saving">00</span></h4>
                     <br>
-                    <h4>Remaining Balance : 2500</h4>
+                    <h4>Remaining Balance : <span id="remaining-balance">00</span> </h4>
 
                     </div>
                     
