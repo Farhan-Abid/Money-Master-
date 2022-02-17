@@ -22,24 +22,40 @@ document.getElementById('calculate-button').addEventListener('click', function()
 
     const expensesTotal = document.getElementById('expense-total');
     const expensesTotalText = expensesTotal.innerText;
-    const fullExpenseTotal = parseFloat(expensesTotalText);
-    expensesTotal.innerText = foodPrice + rentPrice + clothesPrice;
+    // const fullExpenseTotal = parseFloat(expensesTotalText);
+    const previousExpenseTotal = parseFloat(foodPrice + rentPrice + clothesPrice);
+    expensesTotal.innerText = previousExpenseTotal;
 
     // balance after income and expenses
-
+    
     const balanceTotal = document.getElementById('balance-total');
     const balanceTotalText = balanceTotal.innerText;
-    const MainBalance = parseFloat(balanceTotalText);
+    const previousBalanceTotal = parseFloat(incomeAmount - previousExpenseTotal);
+    balanceTotal.innerText =  previousBalanceTotal;
     
-    balanceTotal.innerText = incomeAmount - expensesTotal ;
     
     // clear input field
     foodInput.value = '';
     rentInput.value = '';
     clothesInput.value = '';
-    incomeInput.value = '';
+});
+    // second calculate button handler
+
+    document.getElementById('second-calculate-button').addEventListener('click', function(){
+        const inputSave = document.getElementById('input-save');
+        const saveAmountText = inputSave.value;
+        const saveAmount = parseFloat(saveAmountText);
+
+    // savings and remaining balance code 
+
+    const totalSaving = document.getElementById('total-saving');
+    const totalSavingText = totalSaving.innerText ;
+    const previousSavingTotal = parseFloat((saveAmount / 100) * incomeAmount) ;
+    totalSaving.innerText = previousSavingTotal;
+
+        
+    })
 
 
     
 
-})

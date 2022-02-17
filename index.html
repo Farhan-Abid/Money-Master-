@@ -55,12 +55,13 @@
                       <div class="text-center">
                       <form class="mt-4" action="/action_page.php">
                         <label for="fname">Save :</label>
-                        <input type="text" id="fname" name="fname">     % <button type="button" class="btn btn-primary">Calculate</button>
+                        <input id="input-save"
+                         type="text" id="fname" name="fname">     % <button id="second-calculate-button" type="button" class="btn btn-primary">Calculate</button>
                     </div>
 
                     <!-- saving and remaining balance part -->
                     <div class="text-center">
-                        <h4 class="mt-4">Saving Amount : 2000</h4>
+                        <h4 class="mt-4">Saving Amount : <span id="total-saving">00</span></h4>
                     <br>
                     <h4>Remaining Balance : 2500</h4>
 
