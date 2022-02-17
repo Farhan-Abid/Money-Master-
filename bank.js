@@ -61,7 +61,7 @@ document.getElementById('second-calculate-button').addEventListener('click', fun
         const balanceTotal = document.getElementById('balance-total');
  
         if(totalSavingAmount>balanceTotal.innerText){
-            alert("Sorry!");
+            alert("Sorry! You dont have enough balance!");
         }else{
             const totalSaving = document.getElementById('total-saving');
             totalSaving.innerText=totalSavingAmount;
